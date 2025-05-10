@@ -37,6 +37,18 @@ nav {
   padding: 0 2rem;
 }
 
+ul {
+  list-style-position: inside; /* Ensures bullets are inside the content box */
+  margin: 0; /* Removes any extra margins */
+  padding: 0; /* Removes extra padding */
+}
+
+li {
+  text-align: left; /* Ensures the text aligns properly */
+  margin: 5px 0; /* Adds consistent spacing between list items */
+  padding: 0; /* Removes extra padding */
+}
+
 .logo {
   text-decoration: none;
   font-size: 2rem;
