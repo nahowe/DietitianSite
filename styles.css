@@ -1,0 +1,134 @@
+/* css/styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+header {
+  background: #74b49b;
+  color: white;
+  padding: 1rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: #f3f9f4;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.socials {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 1rem;
+  color: #74b49b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  text-decoration: underline;
+}
+
+.featured {
+  padding: 2rem 1rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.recipe-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  padding: 1rem;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #74b49b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #5a937d;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
