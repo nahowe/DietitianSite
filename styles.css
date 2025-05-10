@@ -43,6 +43,8 @@ nav {
   font-weight: bold;
   color: inherit;
   text-transform: capitalize;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .nav-links {
