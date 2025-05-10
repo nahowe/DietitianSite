@@ -41,7 +41,7 @@ nav {
   font-size: 2rem;
   font-weight: bold;
   color: var(--white);
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .nav-links {
