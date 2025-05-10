@@ -1,134 +1,170 @@
 /* css/styles.css */
 
+:root {
+  --primary: #6bbf94;
+  --accent: #3a6f65;
+  --light-bg: #f5f7f6;
+  --text: #2c2c2c;
+  --white: #ffffff;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --radius: 12px;
+}
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--light-bg);
+  color: var(--text);
   line-height: 1.6;
-  background-color: #fdfdfd;
-  color: #333;
 }
 
 header {
-  background: #74b49b;
-  color: white;
-  padding: 1rem 0;
+  background-color: var(--primary);
+  padding: 1.5rem 0;
+  box-shadow: var(--shadow);
 }
 
 nav {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
+  color: var(--white);
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
+  transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-  text-decoration: underline;
+  color: var(--accent);
 }
 
 .hero {
-  background: #f3f9f4;
-  padding: 3rem 1rem;
+  padding: 4rem 2rem;
   text-align: center;
+  background: linear-gradient(135deg, #e9f8f2, #d4efdf);
 }
 
-.socials {
-  text-align: center;
-  padding: 2rem 1rem;
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-.social-icons a {
-  display: inline-block;
-  margin: 0 1rem;
-  color: #74b49b;
-  font-weight: bold;
-  text-decoration: none;
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
 }
 
-.social-icons a:hover {
-  text-decoration: underline;
-}
-
-.featured {
-  padding: 2rem 1rem;
+section {
+  padding: 3rem 2rem;
   max-width: 1100px;
   margin: auto;
 }
 
-.recipe-cards {
+.social-icons a {
+  margin: 0 1rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--primary);
+}
+
+.featured {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
   justify-content: center;
+  gap: 2rem;
 }
 
 .card {
-  background: #fff;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-  border-radius: 8px;
+  background-color: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
   overflow: hidden;
   width: 300px;
-  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card img {
   width: 100%;
-  height: auto;
+  display: block;
 }
 
 .card h3 {
   padding: 1rem;
+  font-size: 1.2rem;
 }
 
 form {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
   max-width: 500px;
   margin: auto;
 }
 
-input, textarea, button {
+form label {
+  font-weight: bold;
+}
+
+input,
+textarea {
   width: 100%;
   padding: 0.75rem;
   margin-top: 0.5rem;
-  border-radius: 5px;
+  margin-bottom: 1.5rem;
   border: 1px solid #ccc;
+  border-radius: var(--radius);
   font-size: 1rem;
 }
 
 button {
-  background-color: #74b49b;
-  color: white;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0.75rem;
+  font-size: 1rem;
   border: none;
+  border-radius: var(--radius);
   cursor: pointer;
-  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #5a937d;
+  background-color: var(--accent);
 }
 
 footer {
-  background: #333;
-  color: white;
+  background-color: var(--accent);
+  color: var(--white);
   text-align: center;
-  padding: 1rem 0;
-  margin-top: 2rem;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
 }
