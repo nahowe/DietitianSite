@@ -6,5 +6,10 @@ Recipes
 
 Cookbooks
 - links to cookbooks you like (maybe we set up referal codes?)
-- we can house YOUR cookbook here :) 
+- we can house YOUR cookbook here :)
+
+URL Ideas
+- lindseyhowe.com
+- lmhrd.com
+- 
 
