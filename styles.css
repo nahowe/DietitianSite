@@ -82,10 +82,14 @@ nav {
   text-decoration: none;
   font-size: 2rem;
   font-weight: bold;
-  color: inherit;
+  color: var(--white); /* Ensure visibility */
   text-transform: capitalize;
   cursor: pointer;
   z-index: 10;
+}
+
+.logo:hover {
+  color: var(--accent); /* Optional hover effect */
 }
 
 h1, h2, h3 {
