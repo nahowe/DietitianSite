@@ -10,17 +10,30 @@
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Box shadow */
   --radius: 12px; /* Border radius for rounded corners */
   --font-main: 'Poppins', sans-serif; /* Primary font family */
+  --font-weight-regular: 400; /* Regular weight */
+  --font-weight-bold: 700; /* Bold weight */
 }
+
+/*--------------------------------------
+Import Google font styles
+--------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 /* -----------------------------------
    Global Reset and Body Styles
 ----------------------------------- */
 body {
-  margin: 0;
   font-family: var(--font-main);
-  background-color: var(--light-bg);
+  font-weight: var(--font-weight-regular);
   color: var(--text);
   line-height: 1.8;
+  font-size: clamp(1rem, 2.5vw, 1.2rem); /* Responsive scaling */
+}
+
+p {
+  margin-bottom: 1.5rem; /* Add spacing between paragraphs */
+  color: #555; /* Softer color for body text */
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 
 /* -----------------------------------
@@ -73,6 +86,37 @@ nav {
   text-transform: capitalize;
   cursor: pointer;
   z-index: 10;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-main);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem); /* Responsive scaling */
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: var(--font-weight-bold);
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 /* -----------------------------------
@@ -208,6 +252,9 @@ button {
   border-radius: var(--radius);
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: var(--font-main);
+  font-weight: var(--font-weight-bold);
+  font-size: 1rem;
 }
 
 button:hover {
