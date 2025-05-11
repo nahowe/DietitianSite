@@ -1,16 +1,20 @@
-/* Updated Modern CSS for Dietitian Personal Site */
-
+/* -----------------------------------
+   Global Variables and Root Styles
+----------------------------------- */
 :root {
-  --primary: #6bbf94;
-  --accent: #3a6f65;
-  --light-bg: #f5f7f6;
-  --text: #2c2c2c;
-  --white: #ffffff;
-  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  --radius: 12px;
-  --font-main: 'Poppins', sans-serif;
+  --primary: #6bbf94; /* Main brand color */
+  --accent: #3a6f65; /* Secondary accent color */
+  --light-bg: #f5f7f6; /* Light background */
+  --text: #2c2c2c; /* Default text color */
+  --white: #ffffff; /* White color */
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Box shadow */
+  --radius: 12px; /* Border radius for rounded corners */
+  --font-main: 'Poppins', sans-serif; /* Primary font family */
 }
 
+/* -----------------------------------
+   Global Reset and Body Styles
+----------------------------------- */
 body {
   margin: 0;
   font-family: var(--font-main);
@@ -19,13 +23,17 @@ body {
   line-height: 1.8;
 }
 
+/* -----------------------------------
+   Header and Navigation
+----------------------------------- */
 header {
-  background-color: var(--primary);
+  background-color: var(--primary); /* Sticky header background */
   padding: 1.5rem 0;
   box-shadow: var(--shadow);
   position: sticky;
   top: 0;
   z-index: 1000;
+  transition: background-color 0.3s ease; /* Smooth transition for scrolling effect */
 }
 
 nav {
@@ -35,28 +43,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
-}
-
-ul {
-  list-style-position: inside; /* Ensures bullets are inside the content box */
-  margin: 0; /* Removes any extra margins */
-  padding: 0; /* Removes extra padding */
-}
-
-li {
-  text-align: left; /* Ensures the text aligns properly */
-  margin: 5px 0; /* Adds consistent spacing between list items */
-  padding: 0; /* Removes extra padding */
-}
-
-.logo {
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: bold;
-  color: inherit;
-  text-transform: capitalize;
-  cursor: pointer;
-  z-index: 10;
 }
 
 .nav-links {
@@ -79,6 +65,19 @@ li {
   text-decoration: underline;
 }
 
+.logo {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: inherit;
+  text-transform: capitalize;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* -----------------------------------
+   Hero Section
+----------------------------------- */
 .hero {
   padding: 6rem 2rem;
   text-align: center;
@@ -98,6 +97,9 @@ li {
   color: #555;
 }
 
+/* -----------------------------------
+   General Section Styling
+----------------------------------- */
 section {
   padding: 4rem 2rem;
   max-width: 1100px;
@@ -105,6 +107,9 @@ section {
   text-align: center;
 }
 
+/* -----------------------------------
+   Social Media Icons
+----------------------------------- */
 .social-icons {
   display: flex;
   justify-content: center;
@@ -124,6 +129,9 @@ section {
   color: var(--primary);
 }
 
+/* -----------------------------------
+   Featured Section and Cards
+----------------------------------- */
 .featured {
   display: flex;
   flex-wrap: wrap;
@@ -162,6 +170,9 @@ section {
   color: #666;
 }
 
+/* -----------------------------------
+   Contact Form Styling
+----------------------------------- */
 form {
   background: var(--white);
   padding: 2rem;
@@ -204,6 +215,9 @@ button:hover {
   transform: scale(1.05);
 }
 
+/* -----------------------------------
+   Footer Styling
+----------------------------------- */
 footer {
   background-color: var(--accent);
   color: var(--white);
@@ -223,22 +237,40 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Responsive Design */
+/* -----------------------------------
+   Responsive Design
+----------------------------------- */
 @media (max-width: 768px) {
+  /* Navigation links stacked vertically */
   .nav-links {
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
   }
 
+  /* Hero section adjustments */
   .hero h1 {
     font-size: 2rem;
+    margin-bottom: 1rem;
   }
 
   .hero p {
     font-size: 1rem;
   }
 
+  /* Cards take full width on mobile */
   .card {
-    width: 90%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Form adjustments */
+  form {
+    padding: 1.5rem;
+  }
+
+  button {
+    width: 100%;
+    text-align: center;
   }
 }
