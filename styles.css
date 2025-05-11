@@ -83,13 +83,26 @@ nav {
   font-size: 2rem;
   font-weight: bold;
   color: var(--white); /* Ensure visibility */
-  text-transform: capitalize;
   cursor: pointer;
   z-index: 10;
 }
 
 .logo:hover {
   color: var(--accent); /* Optional hover effect */
+}
+
+.logo i {
+  display: inline-block;
+  border-radius: 50%; /* Make it circular */
+  background-color: var(--primary); /* Background color for the circle */
+  padding: 0.5rem; /* Space inside the circle */
+  color: var(--white); /* Icon color */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logo i:hover {
+  background-color: var(--accent); /* Change background on hover */
+  transform: scale(1.1); /* Slight zoom effect */
 }
 
 h1, h2, h3 {
